@@ -26,12 +26,12 @@ function newItem(url,left,bottom){
     })
 }
 
-let horizon=window.innerheight/1.75
-let skyheight=window.innerheight-horizon
-let grassheight=horizon
+let horizon = window.innerHeight / 1.75
+let heightofsky=window.innerHeight-horizon
+let heightofgrass=horizon
 
-tile('assets/sky.png',0,horizon, window.innerwidth/100, skyheight/100)
-tile('assets/grass.png',0,0, window.innerwidth/100, grassheight/100)
+tile('assets/sky.png', 0, horizon, window.innerWidth/100, heightofsky/100)
+tile('assets/grass.png', 0, 0, window.innerWidth/100, heightofgrass/100)
 
 newImage('assets/green-character.gif',100,100)
 newImage('assets/tree.png',200,300)
